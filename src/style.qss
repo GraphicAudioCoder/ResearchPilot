@@ -1,0 +1,172 @@
+/* ResearchPilot - Modern AI Style */
+
+/* Main Window */
+QMainWindow {
+    background-color: #181A20;
+    font-family: 'Poppins';
+}
+
+/* Menu Bar */
+QMenuBar {
+    background-color: #23272F;
+    color: #A3B1C6;
+    border-bottom: 1px solid #222;
+    font-family: 'Poppins';
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+QMenuBar::item {
+    background: transparent;
+    color: #A3B1C6;
+    padding: 6px 20px;
+    border-radius: 6px;
+}
+
+QMenuBar::item:selected {
+    background: #2D3748;
+    color: #00BFFF;
+}
+
+QMenu {
+    background-color: #23272F;
+    color: #A3B1C6;
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 8px;
+    font-family: 'Poppins';
+}
+
+QMenu::item {
+    background: transparent;
+    color: #A3B1C6;
+    padding: 8px 24px;
+    border-radius: 6px;
+}
+
+QMenu::item:selected {
+    background: #00BFFF;
+    color: #181A20;
+}
+
+/* Drag & Drop Area */
+QFrame#dragDropFrame {
+    border: 3px dashed #00BFFF;
+    border-radius: 15px;
+    background-color: #23272F;
+    margin: 15px;
+}
+
+QLabel#dragLabel {
+    color: #A3B1C6;
+    font-size: 16px;
+    font-family: 'Poppins';
+    padding: 20px;
+    background: transparent;
+    border: none;
+}
+
+/* Import Files Button */
+QPushButton#importButton {
+    background-color: #00BFFF;
+    color: #181A20;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin: 5px;
+    padding: 10px;
+}
+
+QPushButton#importButton:hover {
+    background-color: #0099CC;
+}
+
+QPushButton#importButton:pressed {
+    background-color: #0077AA;
+}
+
+/* Left Panel */
+QWidget#leftPanel {
+    background-color: #1E222A;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 15px;
+}
+
+/* File List */
+QLabel#fileListTitle {
+    color: #A3B1C6;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    margin: 10px 0 5px 0;
+}
+
+QListWidget#fileListWidget {
+    background-color: #23272F;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: #A3B1C6;
+    font-family: 'Poppins';
+    font-size: 12px;
+    padding: 5px;
+}
+
+QListWidget#fileListWidget::item {
+    padding: 5px;
+    border-radius: 4px;
+    margin: 2px 0;
+}
+
+QListWidget#fileListWidget::item:selected {
+    background-color: #00BFFF;
+    color: #181A20; /* Ripristinato il colore originale per l'elemento selezionato */
+}
+
+QListWidget#fileListWidget::item:pressed {
+    background-color: #00BFFF;
+    color: #FFFFFF; /* Cambiato il colore solo per l'elemento cliccato */
+}
+
+QListWidget#fileListWidget::item:hover {
+    background-color: #2D3748;
+}
+
+QListWidget#fileListWidget::item:selected:hover {
+    background-color: #00BFFF; /* Mantiene il background */
+    color: #181A20; /* Rimuove l'effetto hover sull'elemento selezionato */
+    text-decoration: none; /* Nessun effetto visivo aggiuntivo */
+}
+
+/* Remove Button */
+QPushButton#removeButton {
+    background-color: #633030ff;
+    color: #A3B1C6;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding: 8px;
+    margin-top: 5px;
+}
+
+QPushButton#removeButton:hover {
+    background-color: #2D3748;
+    color: #00BFFF;
+}
+
+QPushButton#removeButton:pressed {
+    background-color: #181A20;
+    color: #00BFFF;
+}
+
+/* Center Label */
+QLabel#centerLabel {
+    font-size: 32px;
+    color: #00BFFF;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
